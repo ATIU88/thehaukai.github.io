@@ -1,0 +1,235 @@
+h1 {color:#098675;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+
+}
+
+h2, h3, h4, h5, h6 {
+    color:blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {font-family: Arial, Helvetica, sans-serif}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	margin: 10px auto 25px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.hero {
+    height: 100%;
+    vertical-align: center;
+    text-align: center;
+}
+.row {
+    margin-bottom: 10px;
+}
+.column,
+.columns {
+ width: 100%;
+ float: left;
+ box-sizing: border-box;
+}
+
+
+.full-width {
+    width: 100%;
+}
+
+.jumbo {
+    min-height: 25rem;
+    padding:  2rem 3rem;
+    position: relative;
+}
+.jumbo p {
+    color: #489738;
+}
+.band {
+    background-color: #daeeac;
+}
+.band .column,
+.band .columns {
+    text-align: center;
+}
+.band p {
+    color: #212121;
+}
+footer.band {
+    background-color: #08b69fc9;
+}
+.title {
+    font-size: 400%;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px #dbd9d9; 
+}
+
+p.lead {
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 0 4rem;
+    text-shadow: 1px 1px 3px #f7eded;
+}
+nav {
+    margin: 0 !important;
+}
+nav.main {
+    position: relative;
+}
+nav.main.row {
+    background-color: #333;
+    color: #FFF;
+    box-shadow: 0 2px 3px #3F51B5;
+    min-height: 2rem;
+    text-align: center;
+}
+nav.main.row .column,
+nav.main.row .columns {
+    margin-top: .6rem;
+    height: 100%;
+}
+nav.main.row a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Change color on hover */
+nav.main.row a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.button,
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #FFF;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #0fa3bd;
+  border-radius: 4px;
+  border: 1px solid #C5CAE9;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 1px #4157e6;
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+  color: #212121;
+  border-color: #303F9F;
+    background-color: #aed8f3;
+  outline: 0;
+}
+
+.centered {
+    text-align: center;
+}
+footer.band p {
+    color: rgb(10, 0, 0);
+    text-align: center;
+}
+footer.band ul, footer.band ol, ul, ol {
+    text-align: left;
+}
+footer .column h3,
+footer .columns h3 {
+    text-align: center;
+}
+
+.banner {
+    background-color: #C5CAE9;
+    background-image: url(../images/HeaderBG3.jpg);
+    background-size: cover;
+    margin-top: 0 !important;
+}
+
+thead {
+    background-color: #C5CAE9;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+/* Begin Media Queries to fit other screens starting with tablet-ish sized screens */
+@media screen and (min-width: 400px) { /* For devices larger than 400px */
+	.container {
+		width: 95%;
+		padding: 0;
+	}
+}
+@media screen and (min-width: 550px) { /* For devices larger than 550px */
+	.container {
+		width: 90%
+	}
+	.column,
+	.columns {
+		margin-left: 4%;
+        padding: 4px;
+	}
+	.column:first-child,
+	.columns:first-child {
+		margin-left: 0;
+	}
+	.one.column {
+		width: 13.3333333333%;
+	}
+	.two.columns {
+		width: 30.6666666667%;
+	}
+	.three.columns {
+		width: 48%;
+	}
+	.four.columns {
+		width: 65.3333333333%;
+	}
+	.five.columns {
+		width: 82.6666666667%;
+	}
+	.six.columns {
+		width: 100%;
+	}
+	.half.column {
+		width: 48%;
+	}
+	.third.column {
+		width: 30.6666666667%;
+	}
+	.two-thirds.column {
+		width: 65.3333333333%;
+	}
+}
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
